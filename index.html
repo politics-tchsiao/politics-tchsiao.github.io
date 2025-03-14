@@ -9,7 +9,7 @@
     :root {
         --main-bg-color: #F0F4F8;
         --container-bg-color: #FFFFFF;
-        --text-color: #333333;
+        --text-color: #000000;
         --link-color: blue;
         --link-visited-color: #6610f2;
         --link-hover-color: #0BB54D;
@@ -81,11 +81,13 @@
         background-size: cover;
         background-position: center;
     }
-    ul {
+    ul, ol {
+        color: var(--text-color);
         list-style-type: none;
         padding: 0;
     }
     li {
+        color: var(--text-color);
         margin-bottom: 16px;
     }
 </style>
