@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 <style>
     :root {
-        --main-bg-color: #F0F4F8;
+       /* --main-bg-color: #F0F4F8;*/
         --container-bg-color: #FFFFFF;
         --text-color: #000000;
         --link-color: blue;
@@ -21,8 +21,16 @@
     }
     body {
         font-family: var(--font-family);
-        background-color: var(--main-bg-color);
+        /*background-color: var(--main-bg-color);*/
         color: var(--text-color);
+    }
+    .background-image {
+      background-image: url('graph/back.png');
+      background-size: cover;
+      background-position: top;
+      width: 100vw;
+      height: 100vh;
+      color: white; 
     }
     .container {
         width: 80%;
@@ -106,6 +114,7 @@
         <div id="date"></div>
         <div id="time"></div>
     </div>
+    <div class="background-image">
     <div class="container">
         <h1>Tzu-Chi Hsiao (蕭子期)</h1>
         <div class="profile-pic"></div> <br>
@@ -146,5 +155,6 @@
         <br><br>
         &copy; 2026.
         </div>
+    </div>
 </body>
 </html>
