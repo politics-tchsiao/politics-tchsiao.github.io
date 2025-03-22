@@ -7,12 +7,12 @@
 <style>
     body {
         font-family: "Times New Roman", "標楷體";
-        background-color: white;
+        background-color: transparent;
     }
     table {
         width: 100%;
         margin: 20px 0;
-        background-color: #fff;
+        background-color: #000000;
     }
     th, td {
         padding: 12px;
@@ -20,20 +20,20 @@
         border: 0px;
     }
     th {
-        background-color: white;
-        color: black;
+        background-color: transparent;
+        color: white;
     }
     tr:hover {
-        background-color: white;
+        background-color: transparent;
     } 
     a:visited {
-        color: #6610F2;
+        color: #D4C0CB;
     }
     a:hover {
-        color: #0BB54D;
+        color: #FA9BAC;
     }
     a:active {
-        color: #BF9B0B;
+        color: #FFCC00;
     }
     .right {
         text-align: right;
@@ -42,13 +42,21 @@
         text-align: center;
     }
     a {
-        color: blue;
+        color: #6495ED;
         text-decoration: none;
+    }
+    .background-image {
+      background-image: url('../img/back_sch.png');
+      background-size: cover;
+      background-position: top;
+      background-attachment: fixed;
+      color: white;
     }
 </style>
 <link rel="icon" type="image/x-icon" href="../img/fav.ico">
 </head>
 <body>
+<div class="background-image">
     &gt; <a href="../index.html">Back to the homepage</a>.
     <H2 class="center">Schedule</H2>
     <table>
@@ -142,5 +150,6 @@
         </tr>
     </table>
 &copy; 2026
+</div>
 </body>
 </html>
