@@ -87,16 +87,16 @@
 </style>
 <link rel="icon" type="image/x-icon" href="img/fav.ico">
 <script>
-    function updateTime() {
-        const now = new Date();
-        const dateOptions = { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'};
-        const date = now.toLocaleDateString('en', dateOptions);
-        const time = now.toLocaleTimeString('en', { hour12: false });
-        document.getElementById('date').textContent = date;
-        document.getElementById('time').textContent = time;
-    }
-    setInterval(updateTime, 1000);
-    window.onload = updateTime;
+function updateTime() {
+const now = new Date();
+const dateOptions = { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'};
+const date = now.toLocaleDateString('en', dateOptions);
+const time = now.toLocaleTimeString('en', { hour12: false });
+document.getElementById('date').textContent = date;
+document.getElementById('time').textContent = time;
+}
+setInterval(updateTime, 1000);
+window.onload = updateTime;
 </script>
 </head>
 <body>
@@ -108,7 +108,7 @@
 <div class="profile-pic">
 <a href="img/Tom_Hsiao.png"><img src="img/Tom_Hsiao.png" alt=""></a>
 </div>
-<ul style="line-height:1.0;">
+<ul>
     <li class="info">
         <span style="color: var(--text-color)">Information</span><br>
         Tzu-Chi Hsiao <br>
@@ -128,7 +128,7 @@
         &minus; CCP studies.
     </li>
     <li class="course">
-        <span style="color: var(--text-color)">Course List</span><br>
+        <span style="color: var(--text-color)">Course</span><br>
         &minus; <a href="../pi/index.html">Political ideology</a>. <br>
         &minus; <a href="../ccp/index.html">CCP politics</a>. <br>
     </li>
