@@ -10,10 +10,23 @@
 \usepackage{fancyhdr}
 \usepackage{parskip}
 \usepackage{tikz}
+\usepackage{xcolor}
+\definecolor{babyblue}{RGB}{137, 207, 240}
+\definecolor{emerald_green}{RGB}{80, 200, 120}
+\definecolor{light_violet}{RGB}{207, 159, 255}
+\definecolor{silver}{RGB}{192, 192, 192}
 \setCJKmainfont{標楷體-繁}
 \setmainfont{Times New Roman}
 \titleformat{\section}{\Large\bfseries}{}{0pt}{}
 \titlespacing*{\section}{0pt}{1em}{0em}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=babyblue,
+    linkcolor=emerald_green,
+    citecolor=light_violet,
+    filecolor=silver,
+    pdfborder={0 0 0}
+}
 \fancyfoot[C]{\thepage}
 \newcommand{\sectionline}{
 \vspace{-0.5em} \noindent
@@ -25,6 +38,19 @@
 \begin{center}
 {\Large Tzu-Chi Hsiao (蕭子期)} \\
 \end{center}
+\section{Contact Information}
+\sectionline
+\begin{itemize}[leftmargin=0.1in]
+\item Email: politics-tchsiao@gmail.com
+\item Webpage: \url{https://politics-tchsiao.github.io/}
+%\item TEL: +65-5374-1086, and FAX: +65-5374-1088
+%\item Address: 21 Lower Kent Ridge Road, Singapore 119077
+\end{itemize}
+%\section{Experience}
+%\sectionline
+%\begin{itemize}[leftmargin=0.1in]
+%\item Research Assistant in P.S., National University of Singapore, 2033 - Present
+%\end{itemize}
 \section{Education}
 \sectionline
 \begin{itemize}[leftmargin=0.1in]
@@ -34,5 +60,5 @@
 \end{itemize}
 \section{Publication}
 \sectionline
-
+Please refer to \url{https://politics-tchsiao.github.io/publication/}.
 \end{document}
