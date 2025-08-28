@@ -88,12 +88,17 @@
 <link rel="icon" type="image/x-icon" href="img/fav.ico">
 <script>
 function updateTime() {
-const now = new Date();
-const dateOptions = { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'};
-const date = now.toLocaleDateString('en', dateOptions);
-const time = now.toLocaleTimeString('en', { hour12: false });
-document.getElementById('date').textContent = date;
-document.getElementById('time').textContent = time;
+    const now = new Date();
+    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const weekday = weekdays[now.getDay()];
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = months[now.getMonth()];
+    const year = now.getFullYear();
+    const date = `${weekday}, ${day} ${month} ${year}`;
+    const time = now.toLocaleTimeString('en', { hour12: false });
+    document.getElementById('date').textContent = date;
+    document.getElementById('time').textContent = time;
 }
 setInterval(updateTime, 1000);
 window.onload = updateTime;
